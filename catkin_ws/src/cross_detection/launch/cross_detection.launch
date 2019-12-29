@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<node name="cross_detection_node" pkg="cross_detection" type="cross_detection_node" output="screen">
+		<param name="image_raw_topic" type="string" value="/cam_front/csi_cam/image_raw" />
+		<param name="image_render_topic" type="string" value="/cam_front/csi_cam/image_raw_render" />
+		<param name="boundingBoxesTopic" type="string" value="/crossBoundingBoxes" />
+		<param name="boundingBoxesFrameId" type="string" value="/crossBoundingBoxes" />
+
+		<param name="if_render_results" type="int" value="1" />
+		<param name="score_threshold" type="double" value="0.25" />
+
+		<param name="cross_template_file" type="string" value="$(find cross_detection)/data/cross_template.png"/>
+		<param name="h_threshold" type="double" value="0.8"/>
+		<param name="crop_x1" type="int" value="0"/>
+		<param name="crop_y1" type="int" value="450"/>
+		<param name="crop_x2" type="int" value="1079"/>
+		<param name="crop_y2" type="int" value="719"/>
+	</node>
+</launch>

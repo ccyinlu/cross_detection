@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>cross_detection</name>
+  <version>1.1.4</version>
+  <description>output the uv cordinates of the cross</description>
+  <maintainer email="ccyinlu@whu.edu.cn">ethan</maintainer>
+  <license>BSD</license>
+  <author email="ccyinlu@whu.edu.cn">ethan</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>
